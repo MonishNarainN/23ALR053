@@ -23,11 +23,36 @@ This repository contains the final submission scaffold for the AffordMed Full St
 
 ## Setup Overview
 
-1. Install backend dependencies in `notification_app_be/`
-2. Install frontend dependencies in `notification_app_fe/`
-3. Configure environment variables from `.env.example`
-4. Start Redis and queue workers
-5. Run backend and frontend concurrently
+1. Install backend dependencies:
+   - `cd notification_app_be`
+   - `npm install`
+2. Install frontend dependencies:
+   - `cd ../notification_app_fe`
+   - `npm install`
+3. Configure environment variables:
+   - copy `.env.example` to `.env` in both `notification_app_be/` and `notification_app_fe/` as needed
+4. Start the backend:
+   - `cd ../notification_app_be`
+   - `npm run dev`
+5. Start the frontend:
+   - `cd ../notification_app_fe`
+   - `npm run dev`
+
+> Redis is optional. If Redis is not available, the backend still starts and the app continues to work, but queue and pub/sub features are disabled.
+
+## Screenshot Notes
+
+The repository includes a `screenshots/` folder intended for:
+- `all-notifications-page.png`
+- `priority-inbox.png`
+- `mobile-view.png`
+- `filter-placement.png`
+- `viewed-unviewed.png`
+- `api-response.png`
+- `backend-running.png`
+- `frontend-running.png`
+- `queue-worker.png`
+- `websocket-working.png`
 
 ## Repository Guidelines
 
