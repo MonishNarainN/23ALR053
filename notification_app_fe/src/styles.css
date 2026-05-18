@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fb;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.MuiCard-root {
+  transition: box-shadow 0.2s ease;
+}
+
+.MuiCard-root:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}

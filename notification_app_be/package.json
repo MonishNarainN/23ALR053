@@ -1,0 +1,22 @@
+{
+  "name": "notification_app_be",
+  "version": "1.0.0",
+  "description": "AffordMed notification backend with Redis queue and WebSocket support",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "worker": "node src/workers/notificationWorker.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "ioredis": "^5.3.1",
+    "mongoose": "^7.5.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
